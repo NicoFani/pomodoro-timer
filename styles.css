@@ -1,0 +1,190 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto Mono', monospace;
+  scroll-behavior: smooth;
+}
+:root {
+  --primary-black: #000000;
+  --primary-grey: #3e3636;
+  --primary-red: #d72323;
+  --primary-white: #f5eded;
+}
+body {
+  background: linear-gradient(
+    to right bottom,
+    var(--primary-red),
+    var(--primary-black)
+  );
+}
+.header-container {
+  width: 100vw;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1em 2em;
+  background-color: var(--primary-black);
+  position: fixed;
+  z-index: 1000;
+}
+.title {
+  color: var(--primary-white);
+  font-size: 1.5em;
+  font-weight: 600;
+  text-decoration: none;
+}
+.fa-clock {
+  color: var(--primary-white);
+  font-size: 1.5em;
+  margin-right: 0.5em;
+  transition: all 1s ease-in-out;
+}
+.fa-clock:hover {
+  transform: rotate(360deg);
+}
+.section-pomodoro-timer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.section-container {
+  display: flex;
+  gap: 1em;
+  justify-content: center;
+}
+.btn {
+  padding: 1em 2em;
+  border-radius: 0.5em;
+  background-color: var(--primary-grey);
+  color: var(--primary-white);
+}
+.btn-focus {
+  background-color: var(--primary-red);
+  color: var(--primary-white);
+  border: 1px solid var(--primary-white);
+}
+.time-btn-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2em;
+}
+#time {
+  text-align: center;
+  color: var(--primary-white);
+  font-size: 7em;
+  font-weight: 600;
+}
+.btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+}
+#btn-start,
+#btn-pause {
+  padding: 1em 3em;
+  border-radius: 0.5em;
+  cursor: pointer;
+  background-color: var(--primary-white);
+}
+#btn-reset {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: var(--primary-white);
+  font-size: 2em;
+}
+.hide {
+  display: none;
+}
+.show {
+  display: block;
+}
+.section-about-pomodoro {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: var(--primary-white);
+}
+.text-container {
+  width: 40%;
+  text-align: center;
+  margin: 5em 0;
+}
+.title-about-pomodoro {
+  font-size: 3em;
+  font-weight: 600;
+  color: var(--primary-black);
+  text-wrap: wrap;
+  text-align: left;
+  margin: 1em 0;
+}
+.text-about-pomodoro {
+  font-size: 1em;
+  font-weight: 400;
+  color: var(--primary-grey);
+  margin-top: 2em;
+  text-wrap: wrap;
+  text-align: left;
+}
+.list-about-pomodoro {
+  font-size: 1em;
+  font-weight: 400;
+  color: var(--primary-grey);
+  margin-top: 2em;
+  margin-left: 2em;
+  text-wrap: wrap;
+  text-align: left;
+}
+.list-item-about-pomodoro {
+  margin: 1em 0;
+}
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--primary-black);
+  padding: 2em 2em;
+}
+.footer-text-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
+}
+.footer-text {
+  font-size: 1em;
+  font-weight: 400;
+  text-decoration: none;
+  color: var(--primary-white);
+}
+.link-text {
+  transition: all 5s ease-in-out;
+}
+.link-text:hover {
+  text-decoration: underline;
+}
+.social-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+.fa-brands {
+  font-size: 1.2em;
+}
+.fa-linkedin-in {
+  font-size: 1em;
+  border-radius: 2px;
+  padding: 0.2em;
+  background-color: #0077b5;
+}
